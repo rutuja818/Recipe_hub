@@ -1,0 +1,92 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background styling */
+body {
+    background-color: rgb(197, 189, 119);
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    color: #333;
+}
+
+/* Centered content section */
+.diet-plan-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+/* Container for content */
+.container {
+    background-color: #f9f9f9; /* Light background to contrast white */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Heading */
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #f16b0c;
+}
+
+/* Form styling */
+select, button {
+    padding: 10px;
+    margin: 15px 0;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Button hover effect */
+button {
+    background-color: #f77613;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f0650e;
+}
+
+/* Diet result styling */
+.diet-result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f5eee8;
+    border-radius: 5px;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* recipe logo */
+.recipe-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    height: auto;
+    z-index: 1000;
+}

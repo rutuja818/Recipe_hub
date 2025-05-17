@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Plan</title>
+    <link rel="stylesheet" href="style diet.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+<!-- Main content section -->
+<div class="diet-plan-section">
+    <div class="container">
+        <h2>Select Your Health Issue</h2>
+        
+        <!-- Form for selecting health issue -->
+        <form method="POST" action="diet_plan.php">
+            <select name="health_issue" required>
+                <option value="">--Select Health Issue--</option>
+                <option value="High Blood Pressure">High Blood Pressure (BP)</option>
+                <option value="Diabetes">Diabetes (Sugar)</option>
+                <option value="Thyroid Issues">Thyroid Issues</option>
+                <option value="Kidney Issues">Kidney Issues</option>
+                <option value="Heart Disease">Heart Disease</option>
+                <option value="Anemia">Anemia</option>
+            </select>
+            <button type="submit">Get Diet Plan</button>
+        </form>
+
+        <!-- Displaying the result if available -->
+        <?php if (isset($result) && !empty($result)): ?>
+            <div class="diet-result">
+                <h3>Recommended Diet Plan:</h3>
+                <p><?= nl2br(htmlspecialchars($result)) ?></p>
+            </div>
+        <?php elseif ($_SERVER['REQUEST_METHOD'] === 'POST' && empty($result)): ?>
+            <div class="diet-result">
+                <p>No diet plan available for this health issue.</p>
+            </div>
+        <?php endif; ?>
+    </div>
+</div>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, rgba(255, 230, 200, 0.4) 0%, rgba(245, 215, 180, 0.7) 50%, rgba(240, 200, 160, 0.9) 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+  </style>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Search | Recipe Hub</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="search_style.css">
+    <style>
+        /* Add this to prevent content hiding behind header */
+        body {
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Recipe Hub Header -->
+    <header class="main-header">
+        <div class="logo">Recipe Hub</div>
+        <nav class="main-nav">
+            <a href="home_page.php">Home</a>
+            <a href="diet_plan.php">Diet Plan</a>
+            <a href="submit_recipe.html">Submit Recipe</a>
+            <a href="search.html" class="active">Add Ingredient</a>
+             <a href="grocery_home.php">Grocery Order</a>
+            <a href="history.php">History</a>
+           
+        </nav>
+        <div class="user-actions">
+            <?php else: ?>
+                <a href="user_login.php" class="btn">Login</a>
+            <?php endif; ?>
+        </div>
+    </header>
+
+    <!-- Your existing search content - unchanged -->
+    <div class="container">
+        <input type="text" id="searchBar" placeholder="Enter ingredients (e.g., chicken, tomatoes)">
+        <button id="searchButton">Search</button>
+        <div id="recipeList"></div>
+    </div>
+
+    <script src="search.js"></script>
+</body>
+</html>

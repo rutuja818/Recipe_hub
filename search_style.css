@@ -1,0 +1,95 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #edc37c; /* Light skin color */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: 500px 200px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ecb37243;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 18px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    background-color: #ffffffb3; /* slightly white transparent box */
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(250, 140, 5, 0.1);
+    background-image: url('wooden-texture.jpg');
+    background-size: cover;
+}
+
+#searchBar {
+    width: 70%;
+    height: 40px;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #000; /* Black search bar */
+    color: #fff; /* White text inside */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+#searchButton {
+    height: 40px;
+    font-size: 18px;
+    background-color: #f99720;
+    color: #000000fc;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#searchButton:hover {
+    background-color: #3e8e41;
+}
+
+#recipeList {
+    margin-top: 20px;
+}
+
+.recipe {
+    background-color: #6ccbff;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe:last-child {
+    border-bottom: none;
+}
+
+.recipe h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #160121;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.recipe p {
+    font-size: 18px;
+    color: #666;
+}
